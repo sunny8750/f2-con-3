@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>accio f2 con 3</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Your favourite and dream project chatGpt</h1>
+        <p>random string token</p>
+    </div>
+    <h1 id="tbl" class="text-warning text-center"> </h1>
+     <div class="text-center">
+        <form action="#" onsubmit="verify()">
+            <h3>Textbox</h3>
+            <textarea name="txtbox" id="" cols="30" rows="10"></textarea>
+            <div class="col-4 text-center">
+                <input type="text" id="tkn" class="form-control" placeholder="your token number plss">
+                
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+     </div>
+
+
+    <script>
+        function verify(){
+
+        
+        let rndmstring = generateString(10);
+        var q = document.getElementById("tbl").innerHTML= rndmstring;
+        let tokn = document.getElementById("tkn").value;
+        if(rndmstring.value==tokn.value){
+            alert("user verified")
+        }else{
+            alert("user not verified")
+        }
+    }
+    </script>
+</body>
+</html>

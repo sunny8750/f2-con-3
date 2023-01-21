@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#mailmsg{
+    color: red;
+}
+#mssg{
+    color: red;
+}
+#conpsdmsg{
+    color: red;
+}
+#pswmsg{
+    color: red;
+}
